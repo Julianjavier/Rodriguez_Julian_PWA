@@ -20,4 +20,8 @@ Goal 1 Duel 1 Assignment
     //Player Health
     var playerOneHealth = 100;
     var PlayerTwoHealth = 100;
+
+    function fight(){};
+
+    function winnerCheck(){};
 })();
