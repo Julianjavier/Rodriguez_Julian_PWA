@@ -8,4 +8,16 @@ Goal 1 Duel 1 Assignment
 
 (function(){
     console.log("LETS ROCK")
+
+    //Player Names
+    var playerOneName = "Spiderman";
+    var playerTwoName = "Batman";
+
+    //Player Damage
+    var playerOneDMG =10;
+    var playerTwoDMG =10;
+
+    //Player Health
+    var playerOneHealth = 100;
+    var PlayerTwoHealth = 100;
 })();
