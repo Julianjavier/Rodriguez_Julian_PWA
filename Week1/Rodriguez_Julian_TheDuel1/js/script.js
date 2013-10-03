@@ -14,8 +14,8 @@ Goal 1 Duel 1 Assignment
     var playerTwoName = "Batman";
 
     //Player Damage
-    var playerOneDMG =50;
-    var playerTwoDMG =50;
+    var playerOneDMG =20;
+    var playerTwoDMG =20;
 
     //Player Health
     var playerOneHealth = 100;
@@ -30,7 +30,9 @@ Goal 1 Duel 1 Assignment
         var p1=Math.floor(Math.random()*(playerOneDMG-minDamage1)+minDamage1);
         var p2=Math.floor(Math.random()*(playerTwoDMG-minDamage2)+minDamage2);
 
-
+         //inflict damage
+         playerOneHealth-=p1;
+         playerTwoHealth-=p2;
         };
 
     };
