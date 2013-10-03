@@ -33,11 +33,26 @@ Goal 1 Duel 1 Assignment
          //inflict damage
          playerOneHealth-=p1;
          playerTwoHealth-=p2;
+          console.log(playerOneName+":"+playerOneHealth+"START"+playerTwoName+":"+playerTwoHealth);
+
+            var results= winnerCheck();
+
         };
 
     };
 
-    function winnerCheck(){};
+    function winnerCheck(){
 
-    fight();
+        if (playerOneHealth<1 && playerTwoHealth){
+            result="DRAW"
+        } else if (playerOneName<1){
+            result=playerTwoName+"WINS"
+        } else if (playerTwoName<1){
+            result=playerOneName+"WINS"
+        };
+
+        return result;
+    };
+
+
 })();
