@@ -48,8 +48,12 @@
 
     console.log("1. avg of an array of numbers");
     var avgNumbers = function(arr){
+        var sum =0
+        for (i= 0; i<arr.length; i++){
+        sum += avgNumbers
+        return sum/ arr.length
+        }
 
-        //CODE GOES HERE
     };
 
     console.log('avg number = ', avgNumbers([1,2,3,4,5]));
@@ -57,7 +61,6 @@
     //--------------------------------------------------------
     console.log("2. concat first and last name");
     function fullName(first, last){
-
         var full= first+" "+last
         return full
      };
@@ -75,7 +78,7 @@
     //--------------------------------------------------------
     console.log("4. sentence char count");
 
-        //PUT FUNCTION HERE
+
 
     console.log(charCount(ipsum));
 
