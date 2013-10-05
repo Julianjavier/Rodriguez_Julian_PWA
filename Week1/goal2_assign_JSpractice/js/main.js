@@ -50,13 +50,13 @@
     var avgNumbers = function(arr){
         var sum =0
         for (i= 0; i<arr.length; i++){
-        sum += avgNumbers
+        sum += arr[i]
         return sum/ arr.length
         }
 
     };
 
-    console.log('avg number = ', avgNumbers([1,2,3,4,5]));
+    console.log ('avg number = ', avgNumbers([1,2,3,4,5]));
 
     //--------------------------------------------------------
     console.log("2. concat first and last name");
@@ -68,7 +68,7 @@
     console.log(fullName('James', 'Bond'));
 
     //--------------------------------------------------------
-    //console.log("3. word count");
+    console.log("3. word count");
     var ipsum = "this is test text that is being used as input to a function"
 
         //PUT FUNCTION HERE
