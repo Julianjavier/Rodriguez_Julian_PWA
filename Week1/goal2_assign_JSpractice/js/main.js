@@ -71,9 +71,11 @@
     console.log("3. word count");
     var ipsum = "this is test text that is being used as input to a function"
 
-        //PUT FUNCTION HERE
-
-    //console.log(wordCount(ipsum));
+    function wordCount(string){
+      var stringArray = string.split(" ")
+      return stringArray.length
+    }
+    console.log(wordCount(ipsum));
 
     //--------------------------------------------------------
     console.log("4. sentence char count");
@@ -89,7 +91,7 @@
     //--------------------------------------------------------
     console.log("5. how many vowels in a word");
 
-        //PUT FUNCTION HERE
+     vawelsInWord.match(/aeiou/gi).length
 
     console.log(vowelsInWord('JavaScript'));
 
