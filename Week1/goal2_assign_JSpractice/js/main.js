@@ -90,9 +90,10 @@
 
     //--------------------------------------------------------
     console.log("5. how many vowels in a word");
+   function vowelsInWord(vowel){
+    return vowel.match(/[aeiou]/g).length;
 
-     vawelsInWord.match(/aeiou/gi).length
-
+   }
     console.log(vowelsInWord('JavaScript'));
 
     //--------------------------------------------------------
