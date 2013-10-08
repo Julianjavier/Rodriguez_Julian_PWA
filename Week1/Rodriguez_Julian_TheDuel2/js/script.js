@@ -37,15 +37,15 @@ Goal 1 Duel 1 Assignment
         var p2=Math.floor(Math.random()*(playerData2[1]-minDamage2)+minDamage2)
 
          //inflict damage
-         playerOneHealth-=p1;
-         playerTwoHealth-=p2;
-         console.log(playerData1[0]+":"+playerOneHealth+" START "+playerData2[0]+":"+playerTwoHealth)
+            playerData1[2]-=p1;
+            playerData2[2]-=p2;
+         console.log(playerData1[0]+":"+playerData1[2]+" START "+playerData2[0]+":"+playerData2[2])
 
             var results= winnerCheck();
 
             if(results === "NO WINNER"){
                 round++;
-                alert(playerOneName+":"+playerOneHealth+" ROUND"+round+" Over "+playerTwoName+" : "+playerTwoHealth)
+                alert(playerData1[0]+":"+playerData1[2]+" ROUND"+round+" Over "+playerData2[0]+" : "+playerData2[2])
             } else{
                 alert(results)
                 break;
@@ -61,7 +61,7 @@ Goal 1 Duel 1 Assignment
     function winnerCheck(){
           var result= "NO WINNER"
 
-        if (playerOneHealth<1 && playerTwoHealth<1){
+        if (playerData1[2]<1 && playerData2[2]<1){
             result="DRAW"
         } else if (playerData1[2]<1){
             result=playerData1[0]+" WINS"
