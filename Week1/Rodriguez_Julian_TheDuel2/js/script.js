@@ -28,7 +28,7 @@ Goal 1 Duel 1 Assignment
 
     //calculates player health and damage
     function fight(){
-        alert (playerOneName+":"+playerOneHealth+" START "+playerTwoName+":"+playerTwoHealth)
+        alert (playerData1[0]+":"+playerData1[2]+" START "+playerData2[0]+":"+playerData2[2])
         for (var i=0; i<10;i++){
 
         var minDamage1 = playerData1[1]* .5
